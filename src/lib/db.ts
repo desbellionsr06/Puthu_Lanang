@@ -70,18 +70,18 @@ export interface User {
   createdAt: string;
 }
 
-// In-Memory Mock Database
+// In-Memory Database Catalog
 export const MENU_ITEMS: MenuItem[] = [
   {
     id: 'puthu-01',
-    name: 'Puthu Tradisional Bambu',
+    name: 'Puthu',
     category: 'pusaka',
-    description: 'Puthu beras pandan suji wangi berisikan lelehan gula aren murni, dikukus dalam tabung bambu clungup dan disajikan hangat dengan taburan kelapa gurih.',
-    portionDetails: '1 Porsi = 5 Tabung Bambu Puthu',
+    description: 'Puthu beras pandan suji berongga bambu isi gula kelapa aren cair melimpah, dikukus dalam tabung bambu clungup dan disajikan hangat dengan taburan kelapa gurih.',
+    portionDetails: '5 pcs / porsi',
     price: 18000,
     rating: 4.9,
     reviewsCount: 342,
-    image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=600&q=80',
+    image: '/images/puthu_bambu.png',
     ingredients: ['Tepung Beras Pandan Suji', 'Gula Aren Murni Trenggalek', 'Kelapa Parut Kukus', 'Garam Laut'],
     allergens: ['Bebas Gluten / Bebas Bahan Pengawet'],
     isAvailable: true,
@@ -90,14 +90,14 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'klepon-02',
-    name: 'Klepon Gula Aren Lumer',
+    name: 'Klepon',
     category: 'paling_laris',
-    description: 'Bola-bola tepung ketan pandan asli bertekstur kenyal lembut dengan isian juruh gula aren leleh murni yang meletus manis segar di dalam mulut.',
-    portionDetails: '1 Porsi = 8 Biji Klepon Murni',
+    description: 'Bulatan ketan hijau kenyal dengan ledakan gula aren cair kental beraroma pandan murni yang meletus segar di dalam mulut.',
+    portionDetails: '8 pcs / porsi',
     price: 18000,
     rating: 4.9,
     reviewsCount: 428,
-    image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=80',
+    image: '/images/klepon_pandan.png',
     ingredients: ['Tepung Ketan Murni', 'Daun Suji & Pandan Wangi', 'Gula Aren Organik', 'Kelapa Muda Parut'],
     allergens: ['Bebas Bahan Pengawet & Pewarna Buatan'],
     isAvailable: true,
@@ -106,14 +106,14 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'cenil-03',
-    name: 'Cenil Pelangi Kenyal',
+    name: 'Cenil',
     category: 'pusaka',
-    description: 'Cenil tepung tapioka olahan resep 1935 bertekstur kenyal pas, diwarnai ekstrak alami bunga telang & suji, disiram juruh aren kental legit.',
-    portionDetails: '1 Porsi = 10 Potong Cenil Pelangi',
+    description: 'Jajanan pati singkong warna-warni bertekstur legit, disiram kuah kinca kental gula aren murni dan taburan kelapa parut segar.',
+    portionDetails: '1 Piring Komplit',
     price: 18000,
     rating: 4.8,
     reviewsCount: 215,
-    image: 'https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80',
+    image: '/images/cenil_pelangi.png',
     ingredients: ['Tepung Tapioka Garut', 'Ekstrak Bunga Telang & Suji', 'Juruh Gula Aren Pekat', 'Kelapa Parut Gurih'],
     allergens: ['Bebas Gluten / Glukosa Organik'],
     isAvailable: true,
@@ -122,14 +122,14 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'lupis-04',
-    name: 'Lupis Ketan Daun Pisang',
+    name: 'Lupis',
     category: 'pusaka',
-    description: 'Lupis ketan putih padat lembut yang dimasak berjam-jam dibungkus daun pisang kepok, disajikan dengan parutan kelapa gurih dan kucuran juruh gula aren kental.',
-    portionDetails: '1 Porsi = 4 Segitiga Lupis Ketan',
+    description: 'Beras ketan putih padat legit berbungkus daun pisang, diselimuti kelapa parut dan diguyur juruh gula kelapa pekat.',
+    portionDetails: '3 potong segitiga',
     price: 18000,
     rating: 4.9,
     reviewsCount: 389,
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80',
+    image: '/images/lupis_ketan.png',
     ingredients: ['Beras Ketan Putih Super', 'Daun Pisang Kepok Alami', 'Kelapa Parut Fresh', 'Juruh Aren Murni'],
     allergens: ['Bebas Bahan Pengawet'],
     isAvailable: true,
@@ -138,14 +138,14 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'paket-campur-05',
-    name: 'Paket Campur Pusaka 4-in-1',
+    name: 'Paket Campur',
     category: 'paket_campur',
     description: 'Kombinasi favorit komplit perpaduan Puthu bambu, Klepon lumer, Cenil kenyal, dan Lupis ketan gurih dalam 1 porsi box beralas daun pisang.',
     portionDetails: '1 Porsi = 2 Puthu + 3 Klepon + 3 Cenil + 2 Lupis',
     price: 20000,
     rating: 5.0,
     reviewsCount: 610,
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80',
+    image: '/images/paket_tampah.png',
     ingredients: ['4 Varian Legendaris', 'Juruh Aren Ekstra', 'Kelapa Kukus Daun Pandan'],
     allergens: ['Bebas Pewarna Sintetis'],
     isAvailable: true,
@@ -154,14 +154,14 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'besek-hampers-06',
-    name: 'Box Besek Bambu Hampers Heritage',
+    name: 'Box Besek Bambu Hampers',
     category: 'besek',
-    description: 'Kemasan besek bambu tradisional ramah lingkungan isi 2 porsi campur komplit (total 20 pcs jajanan) + botol mini juruh gula aren murni.',
+    description: 'Kemasan besek bambu tradisional ramah lingkungan isi 2 porsi campur komplit + botol mini juruh gula aren murni.',
     portionDetails: 'Box Besek Bambu + Kendil Juruh Mini',
     price: 45000,
     rating: 5.0,
     reviewsCount: 185,
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80',
+    image: '/images/paket_tampah.png',
     ingredients: ['2 Porsi Campur Komplit', 'Botol Juruh Aren Murni 100ml', 'Pita Besek Mataraman'],
     allergens: ['Ramah Lingkungan 100% Organik'],
     isAvailable: true,
@@ -170,7 +170,7 @@ export const MENU_ITEMS: MenuItem[] = [
   }
 ];
 
-// Initial Data Containers
+// Initial Mock Data
 export const users: User[] = [
   {
     id: 'user-demo-01',
@@ -188,8 +188,8 @@ export const orders: Order[] = [
     customerName: 'Budi Santoso',
     customerPhone: '081234567890',
     items: [
-      { menuId: 'paket-campur-05', name: 'Paket Campur Pusaka 4-in-1', quantity: 2, price: 20000, notes: 'Ekstra juruh aren' },
-      { menuId: 'puthu-01', name: 'Puthu Tradisional Bambu', quantity: 1, price: 18000 }
+      { menuId: 'paket-campur-05', name: 'Paket Campur', quantity: 2, price: 20000, notes: 'Ekstra juruh aren' },
+      { menuId: 'puthu-01', name: 'Puthu', quantity: 1, price: 18000 }
     ],
     totalPrice: 58000,
     pickupType: 'SCHEDULED_PICKUP',

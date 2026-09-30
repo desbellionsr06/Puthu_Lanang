@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useStore } from '@/store/useStore';
-import { ArrowRight, Flame, Sparkles, Award, Clock, Star, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Flame, Sparkles, Award, Clock, ShieldCheck } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   const { setActiveView } = useStore();
@@ -92,8 +92,8 @@ export const HeroSection: React.FC = () => {
               {/* Main Image */}
               <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden border border-[#3F2D23]">
                 <img
-                  src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80"
-                  alt="Paket Campur Puthu Lanang"
+                  src="/images/paket_tampah.png"
+                  alt="Paket Tampah Puthu Lanang Malang"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#17110C] via-transparent to-black/20" />
