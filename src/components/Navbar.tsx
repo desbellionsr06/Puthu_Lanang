@@ -43,13 +43,21 @@ export const Navbar: React.FC = () => {
           <span className="text-[#3F2D23] hidden sm:inline">•</span>
           <span className="text-[#2E7D32] font-semibold hidden sm:inline">Estimasi Antrean: 12 Menit</span>
         </div>
-        <a
-          href="/admin"
-          className="text-[#D49B42] hover:text-[#F3B251] font-bold transition-colors flex items-center gap-1"
-        >
-          <span>Portal Admin System</span>
-          <span className="text-[10px] bg-[#D49B42]/20 border border-[#D49B42]/40 px-1.5 py-0.5 rounded">Login Admin →</span>
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href="/mobile"
+            className="text-[#2E7D32] hover:text-[#388E3C] font-extrabold transition-colors flex items-center gap-1 bg-[#2E7D32]/20 border border-[#2E7D32]/50 px-2 py-0.5 rounded-lg"
+          >
+            <span>📱 Mobile App (UTS)</span>
+          </a>
+          <a
+            href="/admin"
+            className="text-[#D49B42] hover:text-[#F3B251] font-bold transition-colors flex items-center gap-1"
+          >
+            <span>Portal Admin System</span>
+            <span className="text-[10px] bg-[#D49B42]/20 border border-[#D49B42]/40 px-1.5 py-0.5 rounded">Login Admin →</span>
+          </a>
+        </div>
       </div>
 
       {/* Main Sticky Header */}
