@@ -36,11 +36,20 @@ export const Navbar: React.FC = () => {
   return (
     <>
       {/* Top Operational Status Bar */}
-      <div className="bg-[#110B07] border-b border-[#3F2D23] py-1.5 px-4 text-[11px] text-[#C5B8A8] flex items-center justify-center gap-2">
-        <Clock className="w-3.5 h-3.5 text-[#D49B42]" />
-        <span>Buka Sore Ini: <strong className="text-[#F8F4EC]">17:30 - 21:30 WIB</strong></span>
-        <span className="text-[#3F2D23]">•</span>
-        <span className="text-[#2E7D32] font-semibold">Estimasi Antrean: 12 Menit</span>
+      <div className="bg-[#110B07] border-b border-[#3F2D23] py-1.5 px-4 text-[11px] text-[#C5B8A8] flex items-center justify-between max-w-7xl mx-auto">
+        <div className="flex items-center gap-2">
+          <Clock className="w-3.5 h-3.5 text-[#D49B42]" />
+          <span>Buka Sore Ini: <strong className="text-[#F8F4EC]">17:30 - 21:30 WIB</strong></span>
+          <span className="text-[#3F2D23] hidden sm:inline">•</span>
+          <span className="text-[#2E7D32] font-semibold hidden sm:inline">Estimasi Antrean: 12 Menit</span>
+        </div>
+        <a
+          href="/admin"
+          className="text-[#D49B42] hover:text-[#F3B251] font-bold transition-colors flex items-center gap-1"
+        >
+          <span>Portal Admin System</span>
+          <span className="text-[10px] bg-[#D49B42]/20 border border-[#D49B42]/40 px-1.5 py-0.5 rounded">Login Admin →</span>
+        </a>
       </div>
 
       {/* Main Sticky Header */}
